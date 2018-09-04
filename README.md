@@ -1,14 +1,5 @@
 This repository re-implements the ECCV 2018 paper [Deep Imbalanced Attribute Classification using Visual Attention Aggregation](https://arxiv.org/abs/1807.03903) 
 
-If you use this code, please mention this repo and cite the paper:
-```
-@InProceedings{Sarafianos_2018_ECCV,
-author = {Sarafianos, Nikolaos and Xu, Xiang and Kakadiaris, Ioannis A.},
-title = {Deep Imbalanced Attribute Classification using Visual Attention Aggregation},
-booktitle = {ECCV},
-year = {2018}
-}
-```
 # Development Environment
 
 * Python 3.5
@@ -58,3 +49,15 @@ This will create the record files to `wider_records/` to feed to the iterator.
 ## Run the Code
 
 * Run `main.py`. Remember to provide as an input argumenet the data path. 
+
+
+
+If you use this code, please mention this repo and cite the paper:
+```
+@InProceedings{Sarafianos_2018_ECCV,
+author = {Sarafianos, Nikolaos and Xu, Xiang and Kakadiaris, Ioannis A.},
+title = {Deep Imbalanced Attribute Classification using Visual Attention Aggregation},
+booktitle = {ECCV},
+year = {2018}
+}
+```
