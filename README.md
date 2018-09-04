@@ -30,7 +30,7 @@ $ cd /project/path
 
 # Prepare Data
 
-All records, list and txt files should be provided in the `wider_records/`
+All records, list and txt files should be provided in the `wider_records/` folder
 
 # Pre-trained Models
 
