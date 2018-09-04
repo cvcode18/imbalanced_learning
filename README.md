@@ -9,7 +9,7 @@ booktitle = {ECCV},
 year = {2018}
 }
 
-# Development Environment
+Development Environment
 
 * Python 3.5
 
@@ -23,17 +23,17 @@ $ export PYTHONPATH=/project/path:$PYTHONPATH
 $ cd /project/path
 ```
 
-# Download Datasets
+Download Datasets
 
 * WIDER-Attribute: The original images and the annotation files are provided [here](http://mmlab.ie.cuhk.edu.hk/projects/WIDERAttribute.html), cropped images for each human bounding box can be downloaded [here](https://github.com/zhufengx/SRN_multilabel). 28,340 cropped images in "train" and "val" for training, 29,177 cropped images in "test" for testing.
 
 * PETA: The original images and the annotation files are provided [here](http://mmlab.ie.cuhk.edu.hk/projects/PETA.html). The train/val/test splits as well as the class ratio of the selected 35 attributes we used were obtained can be downloaded [here](https://github.com/asc-kit/vespa/tree/master/generated). 
 
-# Prepare Data
+Prepare Data
 
 In both datasets all records, list and txt files are provided in `records/`
 
-## PETA
+PETA
 
 * Place the PETA dataset under the path `/dataset/path/PETA/PETA_dataset/` and copy paste the folder while renaming it to `/dataset/path/PETA/PETA_preproc/`. 
 
@@ -50,7 +50,7 @@ $ python im2rec.py /project/path/peta_att /dataset/path/PETA/ --quality=100 --pa
 
 This will create the record files to feed to the iterator. 
 
-## WIDER-Attribute
+WIDER-Attribute
 
 * Place the WIDER-Attribute dataset under the path `/dataset/path/WIDER/`. Then copy paste the images and rename as before to `Image_cropped/`. A similar approach is required in here with in which the images are resized using the function in `preprocessing/`.
 
@@ -65,9 +65,9 @@ $ cd /incubator-mxnet/tools/
 $ python im2rec.py /project/path/DeepVisualAttributes /dataset/path/WIDER --quality=100 --pack-label=True
 ```
 
-This will creat the record files to `wider_records/` to feed to the iterator.
+This will create the record files to `wider_records/` to feed to the iterator.
 
-## Run the Code
+Run the Code
 
 * For the WIDER dataset go the respective folder and run `main.py`. 
 
